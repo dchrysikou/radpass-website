@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://radpass.co.uk/sitemap.xml

@@ -141,17 +141,6 @@
   }
 
   /* Visual Elements */
-  .dot-pattern {
-    background-image: radial-gradient(hsl(var(--brand-muted) / 0.15) 1px, transparent 1px);
-    background-size: 24px 24px;
-  }
-
-  .gradient-mesh {
-    background:
-      radial-gradient(ellipse 80% 50% at 20% 40%, hsl(var(--brand) / 0.06) 0%, transparent 50%),
-      radial-gradient(ellipse 60% 40% at 80% 60%, hsl(var(--brand-muted) / 0.08) 0%, transparent 50%);
-  }
-
   .pill-badge {
     @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase;
     background-image: linear-gradient(to bottom, hsl(var(--brand) / 0.12), hsl(var(--brand) / 0.08));

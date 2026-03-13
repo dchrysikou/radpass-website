@@ -13,29 +13,28 @@ export const HeroSection = () => {
   return (
     <section
       id="overview"
-      className="relative flex items-start pt-24" 
+      className="relative flex items-start pt-24"
     >
-
       <div className="section-container relative z-10 pt-8 pb-20 md:pb-16">
         <div className="flex flex-col md:flex-row items-start gap-8 md:gap-16">
           <div className="flex-1 md:pr-8 container-sm">
             {/* Classification pill */}
             <AnimatedSection delay={0}>
-              <Pill className="mb-7">
+              <Pill className="mb-4"> 
                 {content.badge}
               </Pill>
             </AnimatedSection>
 
             {/* Main headline */}
             <AnimatedSection delay={0.1}>
-              <h1 className="heading-hero mb-7 text-balance">
+              <h1 className="heading-hero mb-6 text-balance">
                 {content.title} 
               </h1>
             </AnimatedSection>
 
             {/* Supporting paragraph */}
             <AnimatedSection delay={0.2}>
-              <p className="body mb-12">
+              <p className="body mb-8">
                 {content.description}
               </p>
             </AnimatedSection>

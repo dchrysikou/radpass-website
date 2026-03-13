@@ -4,12 +4,14 @@ import { NHSAlignmentSection } from '../components/sections/NHSAlignmentSection'
 import { VideoSection } from '../components/sections/VideoSection';
 import { AnalyticsSection } from '../components/sections/AnalyticsSection';
 import { ContactSection } from '../components/sections/ContactSection';
-import { AnimatedGradientBackground } from '../components/AnimatedGradientBackground';
+import { ShaderBackground } from '../components/ShaderBackground';
 
 export const MainPage = () => {
   return (
     <div className="relative">
-      <AnimatedGradientBackground />
+      <div className="fixed inset-0 w-full h-full">
+        <ShaderBackground />
+      </div>
       <div className="relative z-10">
         <HeroSection />
         <ApproachSection />

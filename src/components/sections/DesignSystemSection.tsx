@@ -50,6 +50,24 @@ export const DesignSystemSection = () => {
             <AnimatedSection>
               <div className="space-y-12">
                 <div>
+                  <h3 className="heading-subsection mb-6">Experimental Testing</h3>
+                  <div className="bg-card p-6 rounded-lg border border-subtle mb-6">
+                    <h4 className="heading-small mb-3">WebGL Shader Animation Test</h4>
+                    <p className="body-muted mb-4">
+                      Test animated background using WebGL shaders with interactive mouse tracking.
+                    </p>
+                    <a
+                      href="/shader-test.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 font-medium rounded-full transition-shadow duration-200 hover:shadow-xl bg-brand text-white px-6 py-3.5 text-sm"
+                    >
+                      Open Shader Test
+                    </a>
+                  </div>
+                </div>
+
+                <div>
                   <h3 className="heading-subsection mb-6">Semantic System</h3>
                   <div className="bg-card p-6 rounded-lg border border-subtle">
                     <p className="body mb-6">
@@ -78,7 +96,6 @@ export const DesignSystemSection = () => {
                           <div>.heading-small, .heading-assertion, .heading-card</div>
                           <div>.body, .body-muted, .body-small</div>
                           <div>.pill-badge, .icon-container, .floating-nav</div>
-                          <div>.dot-pattern, .gradient-mesh</div>
                         </div>
                       </div>
                     </div>
@@ -191,7 +208,7 @@ export const DesignSystemSection = () => {
                       <div className="text-xs font-medium">Primary Green - Muted</div>
                       <div className="text-xs text-muted">#8FB5A8</div>
                       <div className="text-xs text-muted font-mono">155 24% 64%</div>
-                      <div className="text-xs text-muted">Dot pattern, gradient mesh backgrounds</div>
+                      <div className="text-xs text-muted">Subtle background accents</div>
                     </div>
                   </div>
                   <div className="p-4 bg-card rounded-lg border border-subtle">
@@ -580,50 +597,11 @@ export const DesignSystemSection = () => {
             <AnimatedSection>
               <div className="space-y-8">
                 <div>
-                  <h3 className="heading-subsection mb-4">Dot Pattern</h3>
-                  <div className="h-64 rounded-lg border border-subtle dot-pattern mb-4"></div>
-                  <div className="bg-card p-4 rounded-lg border border-subtle">
-                    <p className="body-muted mb-3">Subtle radial gradient dots on a 24px grid. Used throughout the site for texture.</p>
-                    <div className="text-xs text-muted space-y-1">
-                      <div className="font-mono">Class: .dot-pattern</div>
-                      <div className="font-mono">radial-gradient(hsl(var(--brand-muted) / 0.15) 1px, transparent 1px)</div>
-                      <div className="font-mono">background-size: 24px 24px</div>
-                      <div className="font-mono">Usage: Hero, Video, Contact, Analytics sections</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className="heading-subsection mb-4">Gradient Mesh</h3>
-                  <div className="h-64 rounded-lg border border-subtle gradient-mesh mb-4"></div>
-                  <div className="bg-card p-4 rounded-lg border border-subtle">
-                    <p className="body-muted mb-3">Soft radial gradients creating subtle depth and visual interest.</p>
-                    <div className="text-xs text-muted space-y-1">
-                      <div className="font-mono">Class: .gradient-mesh</div>
-                      <div className="font-mono">Two layered radial gradients</div>
-                      <div className="font-mono">radial-gradient at 20% 40% (brand / 6%)</div>
-                      <div className="font-mono">radial-gradient at 80% 60% (brand-muted / 8%)</div>
-                      <div className="font-mono">Creates organic depth without overwhelming</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className="heading-subsection mb-4">Combined Pattern</h3>
-                  <div className="h-64 rounded-lg border border-subtle relative overflow-hidden mb-4">
-                    <div className="absolute inset-0 gradient-mesh"></div>
-                    <div className="absolute inset-0 dot-pattern opacity-60"></div>
-                  </div>
-                  <div className="bg-card p-4 rounded-lg border border-subtle">
-                    <p className="body-muted mb-3">Layered approach combining gradient mesh base with dot pattern overlay.</p>
-                    <div className="text-xs text-muted space-y-1">
-                      <div className="font-mono">Layer 1 (base): .gradient-mesh</div>
-                      <div className="font-mono">Layer 2 (texture): .dot-pattern with opacity-60</div>
-                      <div className="font-mono">Container: relative overflow-hidden</div>
-                      <div className="font-mono">Both layers: absolute inset-0</div>
-                      <div className="font-mono">Used in Hero section</div>
-                    </div>
-                  </div>
+                  <h3 className="heading-subsection mb-4">Background Patterns</h3>
+                  <p className="body-muted mb-6">
+                    RadPass uses a WebGL shader-based animated background for subtle, performant visual depth.
+                    Static background patterns have been replaced with this dynamic approach.
+                  </p>
                 </div>
 
                 <div>

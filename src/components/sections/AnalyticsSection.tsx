@@ -47,9 +47,7 @@ export const AnalyticsSection = () => {
   }, []);
 
   return (
-    <section id="visibility" className="relative overflow-visible" style={{ paddingTop: 'var(--section-top-padding)', paddingBottom: 'var(--space-section)' }}>
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-bg-section/30 to-transparent" />
-      {/* <div className="absolute inset-0 dot-pattern opacity-30" /> */}
+    <section id="visibility" className="relative overflow-visible" style={{ backgroundColor: '#FAFAF9', paddingTop: 'var(--section-top-padding)', paddingBottom: 'var(--space-section)' }}>
 
       <div className="section-container relative z-10">
         <AnimatedSection>
