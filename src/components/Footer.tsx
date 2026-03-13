@@ -21,8 +21,8 @@ export const Footer = () => {
       <div className="w-full border-t border-white/10"></div>
 
       <div className="section-container py-8">
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className={`body-small text-white/60 ${!isDevelopment ? 'sm:ml-auto' : ''}`}>&copy; 2026 RadPass</p>
+        <div className={`flex flex-col sm:flex-row items-center gap-4 ${!isDevelopment ? 'sm:justify-end' : 'justify-between'}`}>
+          <p className="body-small text-white/60">&copy; 2026 RadPass</p>
 
           {isDevelopment && (
             <div className="flex items-center gap-3">
