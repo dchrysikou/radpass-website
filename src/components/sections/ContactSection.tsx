@@ -62,16 +62,10 @@ export const ContactSection = () => {
                     </span>
                   ))}
                 </p>
-                <Button href={`mailto:${content.email}`}>
-                  {content.ctaText}
-                </Button>
-                <div className="mt-4">
-                  <a
-                    href="mailto:info@radpass.co.uk"
-                    className="body-small hover:text-brand transition-colors duration-200"
-                  >
-                    info@radpass.co.uk
-                  </a>
+                <div className="pb-4">
+                  <Button href={`mailto:${content.email}?subject=RadPass website enquiry`}>
+                    {content.ctaText}
+                  </Button>
                 </div>
               </motion.div>
             </div>
