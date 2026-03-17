@@ -35,7 +35,7 @@ export const ApproachSection = () => {
         </AnimatedSection>
 
         <AnimatedSection>
-          <div className="mb-16">
+          <div className="mb-8 md:mb-16">
             <div className="container-xs">
               <p className="heading-assertion">
                 {approachContent.introStatement}
@@ -44,7 +44,7 @@ export const ApproachSection = () => {
           </div>
         </AnimatedSection>
 
-        <StaggeredContainer className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8" staggerDelay={0.12}>
+        <StaggeredContainer className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 md:mb-8" staggerDelay={0.12}>
           {approachContent.items.map((item, index) => (
             <StaggeredItem key={item.title}>
               <motion.div
@@ -82,7 +82,7 @@ export const ApproachSection = () => {
         </StaggeredContainer>
 
         <AnimatedSection>
-          <div className="mt-12">
+          <div className="mt-8 md:mt-12">
             <div className="container-xs py-4 flex flex-col gap-4">
               <p className="heading-assertion">
                 {approachContent.solutionAnchor}
