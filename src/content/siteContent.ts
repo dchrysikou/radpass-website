@@ -2,7 +2,7 @@ export const siteContent = {
   hero: {
     badge: "Overview",
     title: "Smart Solution for Radiation Controlled Areas",
-    description: "RadPass is a secure, cloud-based platform designed to streamline and digitise radiation-safety management within radiotherapy and diagnostic departments.",
+    description: "RadPass is a secure, cloud-based platform designed to streamline and digitise radiation safety management within radiotherapy and diagnostic departments.",
     ctaPrimary: "Request Information",
     ctaSecondary: "Learn more",
     scrollText: "Scroll",
@@ -37,12 +37,12 @@ export const siteContent = {
   context: {
     badge: "THE PROBLEM & APPROACH",
     sectionTitle: "Operational oversight today is fragmented",
-    title: "Radiotherapy and diagnostic imaging departments frequently operate with fragmented or partially manual radiation safety processes. This creates inefficiency, incomplete documentation, and increased risk of non-compliance with National Regulations (IRR17 and IR(ME)R), particularly across multi-site Trusts where real-time oversight is essential."
+    title: "Radiotherapy and diagnostic imaging departments frequently operate with fragmented or partially manual radiation safety processes. This creates inefficiency, incomplete documentation, and increased risk of non-compliance with National Regulations (IRR17 and IR(ME)R), particularly across multi-site trusts where real-time oversight is essential."
   },
 
   approach: {
     introStatement: "Effective oversight requires a single, reliable source of truth.",
-    solutionAnchor: "RadPass provides a single, auditable system of record for radiation-controlled areas, making operational state explicit, governed, and traceable across sites.",
+    solutionAnchor: "RadPass provides a single, auditable system of record for radiation controlled areas, making operational state explicit, governed, and traceable across sites.",
     items: [
       {
         title: "Safety",
@@ -68,10 +68,10 @@ export const siteContent = {
     roles: [
       {
         role: "NHS Long Term Plan",
-        fit: "Digitises radiation-safety governance to improve efficiency and oversight."
+        fit: "Digitises radiation safety governance to improve efficiency and oversight."
       },
       {
-        role: "CQC: Safe & Well-Led domains",
+        role: "CQC: Safe & Well-led domains",
         fit: "Clear, auditable records that support inspection readiness."
       },
       {
@@ -107,15 +107,15 @@ export const siteContent = {
   visibility: {
     badge: "Analytics",
     title: "Derived Insight",
-    description: "Insight emerges naturally when operational state is governed and auditable.",
+    description: "Insight emerges when operational state is governed and auditable.",
     insights: [
       {
         title: "Live Monitor",
-        description: "Real-time visibility of all Controlled Areas, with role-based access and clear responsibility."
+        description: "Real-time visibility of all controlled areas, with role-based access and clear responsibility."
       },
       {
         title: "Operational time overview",
-        description: "See how time is distributed across Radiation Controlled Areas, by machine state."
+        description: "See how time is distributed across radiation controlled areas, by machine state."
       },
       {
         title: "Inspection-ready records",

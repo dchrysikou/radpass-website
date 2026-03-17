@@ -87,15 +87,17 @@
 @layer components {
   /* Typography */
   .heading-hero {
-    @apply text-[40px] md:text-[48px] font-medium tracking-tight;
+    @apply text-[40px] md:text-[48px] font-semibold;
     color: hsl(var(--text-heading));
     line-height: 1.1;
+    letter-spacing: -0.02em;
   }
 
   .heading-section {
-    @apply text-[32px] md:text-[36px] font-medium tracking-tight;
+    @apply text-[32px] md:text-[36px] font-medium;
     color: hsl(var(--text-heading));
     line-height: 1.2;
+    letter-spacing: -0.02em;
   }
 
   .heading-small {
@@ -111,7 +113,7 @@
   }
 
   .heading-subsection {
-    @apply text-[28px] md:text-[32px] font-normal tracking-tight;
+    @apply text-[28px] md:text-[32px] font-medium tracking-tight;
     color: hsl(var(--text-heading));
     line-height: 1.2;
   }
