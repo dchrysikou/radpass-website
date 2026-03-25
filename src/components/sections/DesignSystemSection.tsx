@@ -137,13 +137,13 @@ export const DesignSystemSection = () => {
             <AnimatedSection>
               <div className="space-y-12">
                 <div>
-                  <h3 className="heading-subsection mb-6">Warm Neutrals</h3>
+                  <h3 className="heading-subsection mb-6">Cool Neutrals</h3>
                   <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     <div className="space-y-2">
-                      <div className="h-24 rounded-lg border border-subtle" style={{ backgroundColor: '#FBFAF9' }}></div>
+                      <div className="h-24 rounded-lg border border-subtle" style={{ backgroundColor: '#FAFAFA' }}></div>
                       <div className="text-xs font-medium">01 - Page BG</div>
-                      <div className="text-xs text-muted">#FBFAF9</div>
-                      <div className="text-xs text-muted font-mono">40 33% 98%</div>
+                      <div className="text-xs text-muted">#FAFAFA</div>
+                      <div className="text-xs text-muted font-mono">0 0% 98%</div>
                     </div>
                     <div className="space-y-2">
                       <div className="h-24 rounded-lg border border-subtle" style={{ backgroundColor: '#FAFAFA' }}></div>
@@ -152,41 +152,41 @@ export const DesignSystemSection = () => {
                       <div className="text-xs text-muted font-mono">0 0% 98%</div>
                     </div>
                     <div className="space-y-2">
-                      <div className="h-24 rounded-lg border border-subtle" style={{ backgroundColor: '#EEECE7' }}></div>
+                      <div className="h-24 rounded-lg border border-subtle" style={{ backgroundColor: '#F0F0F0' }}></div>
                       <div className="text-xs font-medium">03 - Cards</div>
-                      <div className="text-xs text-muted">#EEECE7</div>
-                      <div className="text-xs text-muted font-mono">40 12% 93%</div>
+                      <div className="text-xs text-muted">#F0F0F0</div>
+                      <div className="text-xs text-muted font-mono">0 0% 94%</div>
                     </div>
                     <div className="space-y-2">
-                      <div className="h-24 rounded-lg border border-subtle" style={{ backgroundColor: '#E4E1DA' }}></div>
+                      <div className="h-24 rounded-lg border border-subtle" style={{ backgroundColor: '#E0E0E0' }}></div>
                       <div className="text-xs font-medium">04 - Borders</div>
-                      <div className="text-xs text-muted">#E4E1DA</div>
-                      <div className="text-xs text-muted font-mono">40 18% 87%</div>
+                      <div className="text-xs text-muted">#E0E0E0</div>
+                      <div className="text-xs text-muted font-mono">0 0% 88%</div>
                     </div>
                     <div className="space-y-2">
-                      <div className="h-24 rounded-lg border border-subtle relative" style={{ backgroundColor: '#8A877F' }}>
+                      <div className="h-24 rounded-lg border border-subtle relative" style={{ backgroundColor: '#858585' }}>
                         <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
                           <div className="text-xs font-medium">05 - Muted Text</div>
-                          <div className="text-xs text-white/80">#8A877F</div>
-                          <div className="text-xs text-white/80 font-mono">40 6% 52%</div>
+                          <div className="text-xs text-white/80">#858585</div>
+                          <div className="text-xs text-white/80 font-mono">0 0% 52%</div>
                         </div>
                       </div>
                     </div>
                     <div className="space-y-2">
-                      <div className="h-24 rounded-lg border border-subtle relative" style={{ backgroundColor: '#5E5C57' }}>
+                      <div className="h-24 rounded-lg border border-subtle relative" style={{ backgroundColor: '#5C5C5C' }}>
                         <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
                           <div className="text-xs font-medium">055 - Body Text</div>
-                          <div className="text-xs text-white/80">#5E5C57</div>
-                          <div className="text-xs text-white/80 font-mono">40 5% 36%</div>
+                          <div className="text-xs text-white/80">#5C5C5C</div>
+                          <div className="text-xs text-white/80 font-mono">0 0% 36%</div>
                         </div>
                       </div>
                     </div>
                     <div className="space-y-2">
-                      <div className="h-24 rounded-lg border border-subtle relative" style={{ backgroundColor: '#353330' }}>
+                      <div className="h-24 rounded-lg border border-subtle relative" style={{ backgroundColor: '#333333' }}>
                         <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
                           <div className="text-xs font-medium">06 - Headings</div>
-                          <div className="text-xs text-white/80">#353330</div>
-                          <div className="text-xs text-white/80 font-mono">40 4% 20%</div>
+                          <div className="text-xs text-white/80">#333333</div>
+                          <div className="text-xs text-white/80 font-mono">0 0% 20%</div>
                         </div>
                       </div>
                     </div>
@@ -232,6 +232,30 @@ export const DesignSystemSection = () => {
                         </div>
                       </div>
                       <div className="text-xs text-muted">Used for footer background</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="heading-subsection mb-6">Gradients</h3>
+                  <div className="space-y-4">
+                    <div className="space-y-2">
+                      <div className="h-32 rounded-lg border border-subtle relative overflow-hidden" style={{ background: 'linear-gradient(to bottom, transparent, #F6F5F3)' }}>
+                        <div className="absolute bottom-4 left-4 right-4">
+                          <div className="text-xs font-medium">Section Fade</div>
+                        </div>
+                      </div>
+                      <div className="text-xs text-muted">linear-gradient(to bottom, transparent, #F6F5F3)</div>
+                      <div className="text-xs text-muted font-mono">var(--gradient-section-fade)</div>
+                      <div className="text-xs text-muted">Used for: Approach section background fade</div>
+                    </div>
+                    <div className="p-4 bg-card rounded-lg border border-subtle">
+                      <div className="text-xs text-muted space-y-1">
+                        <div className="font-semibold text-foreground mb-2">Usage</div>
+                        <div className="font-mono">Utility class: .bg-gradient-section-fade</div>
+                        <div className="font-mono">CSS variable: background: var(--gradient-section-fade)</div>
+                        <div className="text-muted mt-2">Creates a smooth fade from transparent to warm neutral section background</div>
+                      </div>
                     </div>
                   </div>
                 </div>

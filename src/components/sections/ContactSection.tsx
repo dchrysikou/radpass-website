@@ -10,7 +10,7 @@ export const ContactSection = () => {
   const content = siteContent.contact;
 
   return (
-    <section id="contact" className="relative overflow-hidden" style={{ backgroundColor: '#F6F5F3', paddingTop: 'var(--section-top-padding)', paddingBottom: 'var(--space-section)' }}>
+    <section id="contact" className="relative overflow-hidden bg-section" style={{ paddingTop: 'var(--section-top-padding)', paddingBottom: 'var(--space-section)' }}>
 
       <div className="section-container relative z-10">
         <div className="container-sm mx-auto text-center">

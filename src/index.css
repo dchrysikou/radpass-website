@@ -7,22 +7,27 @@
 @layer base {
   :root {
     /* Color Palette */
-    --warm-neutral-01: 40 33% 98%;    /* #FBFAF9 - page background */
-    --warm-neutral-02: 0 0% 98%;       /* #FAFAF9 - section background */
-    --warm-neutral-03: 40 12% 93%;    /* #EEECE7 - cards */
-    --warm-neutral-04: 40 18% 87%;    /* #E4E1DA - borders */
-    --warm-neutral-05: 40 6% 52%;     /* #8A877F - muted text */
-    --warm-neutral-055: 40 5% 36%;    /* #5E5C57 - body text */
-    --warm-neutral-06: 40 4% 20%;     /* #353330 - headings */
+    --warm-neutral-01: 0 0% 98%;      /* page background - cooler */
+    --warm-neutral-02: 60 5% 95%;         /* section background - warmer (NHS, Contact) */
+    --warm-neutral-02-alt: #FAFAF9;   /* alternate section background - lighter (Video, Analytics) */
+    --warm-neutral-03: 60 2% 93%;       /* cards - cooler */ 
+    --warm-neutral-04: 0 0% 88%;      /* borders - cooler */
+    --warm-neutral-05: 0 0% 52%;      /* muted text - cooler */
+    --warm-neutral-055: 0 0% 36%;     /* body text - cooler */
+    --warm-neutral-06: 0 0% 20%;      /* headings - cooler */
 
     --green-strong: 164 40% 31%;       /* #2F6F5F - brand */
     --green-muted: 155 24% 64%;        /* #8FB5A8 - backgrounds */
 
     --footer-dark: 220 5% 15%;         /* #252628 - footer background */
 
+    /* Gradients */
+    --gradient-section-fade: linear-gradient(to bottom, transparent, #F3F3F2);
+
     /* Semantic Aliases */
     --bg-page: var(--warm-neutral-01);
     --bg-section: var(--warm-neutral-02);
+    --bg-section-alt: var(--warm-neutral-02-alt);
     --bg-card: var(--warm-neutral-03);
     --border-subtle: var(--warm-neutral-04);
 
@@ -193,6 +198,7 @@
   /* Semantic Aliases */
   .bg-page { background-color: hsl(var(--bg-page)); }
   .bg-section { background-color: hsl(var(--bg-section)); }
+  .bg-section-alt { background-color: var(--bg-section-alt); }
   .bg-card { background-color: hsl(var(--bg-card)); }
   .border-subtle { border-color: hsl(var(--border-subtle)); }
   .via-bg-section { --tw-gradient-via: hsl(var(--bg-section)); }
@@ -209,4 +215,7 @@
 
   /* Footer */
   .bg-footer-dark { background-color: hsl(var(--footer-dark)); }
+
+  /* Gradients */
+  .bg-gradient-section-fade { background: var(--gradient-section-fade); }
 }

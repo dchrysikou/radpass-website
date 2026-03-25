@@ -16,7 +16,7 @@ export const ApproachSection = () => {
   };
 
   return (
-    <section id="approach" className="relative" style={{ background: 'linear-gradient(to bottom, transparent, #F6F5F3)', paddingTop: 'var(--section-top-padding)', paddingBottom: 'var(--space-section)' }}>
+    <section id="approach" className="relative" style={{ background: 'var(--gradient-section-fade)', paddingTop: 'var(--section-top-padding)', paddingBottom: 'var(--space-section)' }}>
       <div className="section-container relative z-10">
         <AnimatedSection>
           <div className="container-sm mb-12">

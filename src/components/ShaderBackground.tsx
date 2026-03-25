@@ -101,7 +101,7 @@ export const ShaderBackground = () => {
         mst.x += cos(u_time * .37 + mst.x * 15.) * .21 * sin(u_time * .14 + mst.y * 7.) * .29;
         mst.y += sin(u_time * .15 + mst.x * 13.) * .37 * cos(u_time * .36 + mst.y * 5.) * .12;
 
-       vec4 color = vec4(vec3(88.0,86.0,82.0)/255.0, 1.0);
+       vec4 color = vec4(vec3(248.0,248.0,248.0)/255.0, 1.0);
 
         color += circle(pst, purpleC, purpleR, purpleB, purpleCol) * 0.9;
         color += circle(mst, mintC, mintR, mintB, mintCol) * 0.9;
@@ -114,12 +114,10 @@ export const ShaderBackground = () => {
 vec2 lightPos = vec2(0.9, 0.15); // top-right light
 float light = distance(st, lightPos);
 
-vec3 warmLight = vec3(245.0,245.0,245.0)/255.0;
+vec3 coolLight = vec3(250.0,250.0,250.0)/255.0;
 
-color.rgb = mix(warmLight, color.rgb, smoothstep(0.2, 1.4, light));
+color.rgb = mix(coolLight, color.rgb, smoothstep(0.2, 1.4, light));
 
-        vec3 cream = vec3(246.0,240.0,228.0)/255.0;
-        color.rgb = mix(cream, color.rgb, 0.8);
         gl_FragColor = vec4(color.rgb, 1.0);
       }
     `;
@@ -181,7 +179,7 @@ color.rgb = mix(warmLight, color.rgb, smoothstep(0.2, 1.4, light));
 
 gl.uniform3f(col2Location, 0, 0, 0);
 gl.uniform3f(col1Location, 0, 0, 0);
-gl.uniform3f(col3Location, 186, 180, 170);  
+gl.uniform3f(col3Location, 246, 245, 244);  
 
     function render(time: number) {
       if (!gl || !canvas) return;

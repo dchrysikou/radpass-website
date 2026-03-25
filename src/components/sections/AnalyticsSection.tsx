@@ -63,7 +63,7 @@ export const AnalyticsSection = () => {
   }, [isLargeScreen]);
 
   return (
-    <section id="visibility" className="relative overflow-visible" style={{ backgroundColor: '#FAFAF9', paddingTop: 'var(--section-top-padding)', paddingBottom: 'var(--space-section)' }}>
+    <section id="visibility" className="relative overflow-visible bg-section-alt" style={{ paddingTop: 'var(--section-top-padding)', paddingBottom: 'var(--space-section)' }}>
       <div className="section-container relative z-10">
         <AnimatedSection>
           <div className="text-center mb-16 container-md mx-auto">
